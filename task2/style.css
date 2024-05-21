@@ -1,0 +1,759 @@
+/* ( SECTION 1 ) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .main-div {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(119, 100, 205, 0.3), rgba(12, 3, 51, 0.3));
+    background: url("https://w0.peakpx.com/wallpaper/889/419/HD-wallpaper-beauty-salon-background-and-for-beautician.jpg");
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    mix-blend-mode: darken;
+  }
+  @media (min-aspect-ratio: 16/9) {
+    .video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .video {
+      width: auto;
+      height: 100%;
+    }
+  }
+  #heading-1 {
+    color: white;
+    margin-left: 150px;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: arial;
+    word-spacing: 10px;
+    transition: 1s;
+  }
+  #heading-1:hover {
+    color: yellow;
+    text-decoration: underline;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  
+  nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    position: relative;
+    transition: 1s;
+  }
+  nav ul li a:hover {
+    color: rgb(194, 118, 26);
+  }
+  nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgb(27, 163, 163);
+    transition: width 0.5s;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+  .content h1 {
+    cursor: pointer;
+    font-size: 130px;
+    margin-top: -100px;
+    color: transparent;
+    font-weight: 600;
+    transition: 1s;
+    width: 100%;
+    position: relative;
+    -webkit-text-stroke: 0.3vw transparent;
+    height: 150px;
+  }
+  #heading-2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #fff;
+    -webkit-text-stroke: 0vw #329d52;
+    border-right: 2px solid transparent;
+    overflow: hidden;
+    animation: animate1 10s linear infinite;
+  }
+  @keyframes animate1 {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+  .content h1:hover {
+    -webkit-text-stroke: 2px transparent;
+    color: red;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  /* ------------------------------------------------------------------------------------------ */
+  
+  /* ( SECTION 2 ) */
+  
+  /* ========================================= ANIMATION WITH JS ===============================================*/
+  section .main-div2 {
+    transition: 2.5s;
+  }
+  .sec2 .main-div2 {
+    transform: translateX(-60%);
+  }
+  .sec2.show-animate .main-div2 {
+    transform: translateX(0);
+  }
+  /* ------------------------------------------------------------------------------------------------------------- */
+  
+  .main-div2 {
+    top: 150px;
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 130vh;
+    border-radius: 100px;
+    margin-left: 150px;
+    background-color: transparent;
+  }
+  .main-div2 img {
+    width: 100%;
+    height: 160vh;
+    border-radius: 120px;
+  }
+  
+  #car-heading {
+    font-style: italic;
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    height: 140px;
+    font-size: 5em;
+    margin-top: 30px;
+    margin-left: 470px;
+    word-spacing: 10px;
+    font-family: arial;
+    color: #fff;
+    transition: 1s;
+    color: transparent;
+    -webkit-text-stroke: 0.3vw transparent;
+  }
+  #car-heading::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    color: #fff;
+    -webkit-text-stroke: 0vw #329d52;
+    border-right: 2px solid transparent;
+    overflow: hidden;
+    animation: animate2 4s linear infinite;
+  }
+  
+  @keyframes animate2 {
+    0%,
+    10%,
+    100% {
+      width: 0;
+      color: rgb(24, 69, 69);
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+  
+  .main-div2 #car-div-1 {
+    position: absolute;
+    background-color: #fff;
+    height: 250px;
+    margin-top: 200px;
+    margin-left: 50px;
+    display: inline-block;
+    border: 1px transparent black;
+    border-radius: 20px;
+    background-attachment: fixed;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #car-div-1 img {
+    border-radius: 20px;
+    height: 180px;
+    width: 330px;
+  }
+  #car-div-1 h4 {
+    word-spacing: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #car-div-1:hover {
+    box-shadow: 0 0 10px 3px black;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .main-div2 #car-div-2 {
+    position: absolute;
+    background-color: #fff;
+    height: 250px;
+    width: 320px;
+    margin-top: 200px;
+    margin-left: 37%;
+    display: inline-block;
+    border: 1px transparent black;
+    border-radius: 20px;
+    background-attachment: fixed;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #car-div-2 img {
+    border-radius: 20px;
+    width: 318px;
+    height: 180px;
+  }
+  #car-div-2 h4 {
+    word-spacing: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #car-div-2:hover {
+    box-shadow: 0 0 10px 3px black;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .main-div2 #car-div-3 {
+    position: absolute;
+    background-color: #fff;
+    height: 250px;
+    margin-top: 200px;
+    margin-left: 68%;
+    display: inline-block;
+    border-radius: 20px;
+    background-attachment: fixed;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #car-div-3 img {
+    border-radius: 20px;
+    width: 348px;
+    height: 180px;
+  }
+  #car-div-3 h4 {
+    word-spacing: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 5px;
+  }
+  #car-div-3:hover {
+    box-shadow: 0 0 10px 3px black;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .main-div2 #car-div-4 {
+    position: absolute;
+    background-color: #fff;
+    height: 250px;
+    margin-top: 550px;
+    margin-left: 50px;
+    display: inline-block;
+    border-radius: 20px;
+    background-attachment: fixed;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #car-div-4 img {
+    border-radius: 18px;
+    height: 180px;
+    width: 330px;
+  }
+  #car-div-4 h4 {
+    word-spacing: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 3px;
+  }
+  #car-div-4:hover {
+    box-shadow: 0 0 10px 3px black;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .main-div2 #car-div-5 {
+    position: absolute;
+    background-color: #fff;
+    height: 250px;
+    width: 350px;
+    margin-top: 550px;
+    margin-left: 35%;
+    display: inline-block;
+    border-radius: 20px;
+    background-attachment: fixed;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #car-div-5 img {
+    border-radius: 20px;
+    width: 348px;
+    height: 180px;
+  }
+  #car-div-5 h4 {
+    word-spacing: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 3px;
+  }
+  #car-div-5:hover {
+    box-shadow: 0 0 10px 3px black;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .main-div2 #car-div-6 {
+    position: absolute;
+    background-color: #fff;
+    height: 250px;
+    margin-top: 550px;
+    margin-left: 68%;
+    display: inline-block;
+    border-radius: 20px;
+    background-attachment: fixed;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #car-div-6 img {
+    border-radius: 20px;
+    width: 348px;
+    height: 180px;
+  }
+  #car-div-6 h4 {
+    word-spacing: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 5px;
+  }
+  #car-div-6:hover {
+    box-shadow: 0 0 10px 3px black;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .main-div2 #car-div-7 {
+    position: absolute;
+    background-color: #fff;
+    height: 250px;
+    margin-top: 900px;
+    margin-left: 50px;
+    display: inline-block;
+    border-radius: 20px;
+    background-attachment: fixed;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #car-div-7 img {
+    border-radius: 18px;
+    height: 180px;
+    width: 330px;
+  }
+  #car-div-7 h4 {
+    word-spacing: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 3px;
+  }
+  #car-div-7:hover {
+    box-shadow: 0 0 10px 3px black;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .main-div2 #car-div-8 {
+    position: absolute;
+    background-color: #fff;
+    height: 250px;
+    width: 350px;
+    margin-top: 900px;
+    margin-left: 36%;
+    display: inline-block;
+    border-radius: 20px;
+    background-attachment: fixed;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #car-div-8 img {
+    border-radius: 20px;
+    width: 348px;
+    height: 180px;
+  }
+  #car-div-8 h4 {
+    word-spacing: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 3px;
+  }
+  #car-div-8:hover {
+    box-shadow: 0 0 10px 3px black;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .main-div2 #car-div-9 {
+    position: absolute;
+    background-color: #fff;
+    height: 250px;
+    margin-top: 900px;
+    margin-left: 70%;
+    display: inline-block;
+    border-radius: 20px;
+    background-attachment: fixed;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #car-div-9 img {
+    border-radius: 20px;
+    width: 330px;
+    height: 180px;
+  }
+  #car-div-9 h4 {
+    word-spacing: 7px;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 5px;
+  }
+  #car-div-9:hover {
+    box-shadow: 0 0 10px 3px black;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  /* --------------------------------------------------------------------------------------------------------------------- */
+  
+  /* ( SECTION 3 ) */
+  
+  /* ========================================= ANIMATION WITH JS ===============================================*/
+  section .main-div-3 {
+    transition: 2.5s;
+  }
+  .sec3 .main-div-3 {
+    transform: translateX(70%);
+  }
+  .sec3.show-animate .main-div-3 {
+    transform: translateX(0);
+  }
+  /* ----------------------------------------------------------------------------------------------------------------- */
+  .main-div-3 {
+    top: 500px;
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 120vh;
+    margin-left: 150px;
+    background-color: darkslategray;
+    border-radius: 110px;
+  }
+  .main-div-3 h1 {
+    top: -6px;
+    font-style: italic;
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    height: 140px;
+    font-size: 4em;
+    margin-top: 30px;
+    margin-left: 39%;
+    word-spacing: 10px;
+    font-family: arial;
+    transition: 1s;
+    color: transparent;
+    -webkit-text-stroke: 0.3vw transparent;
+  }
+  .main-div-3 h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    -webkit-text-stroke: 0vw #329d52;
+    border-right: 2px solid transparent;
+    overflow: hidden;
+    animation: animate3 3s linear infinite;
+  }
+  
+  @keyframes animate3 {
+    0%,
+    10%,
+    100% {
+      width: 0;
+      color: black;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+  
+  .main-div-3 p {
+    color: #fff;
+    top: 120px;
+    margin-left: 25px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    width: 90%;
+    font-size: 2em;
+  }
+  /* --------------------------------------------------------------------------------------------------------------------- */
+  
+  /* ( SECTION 4 ) */
+  
+  /* ========================================ANIMATION WITH JS ========================================== */
+  
+  section .main-div-4 {
+    transition: 2.5s;
+  }
+  .sec4 .main-div-4 {
+    transform: translateX(-50%);
+  }
+  .sec4.show-animate .main-div-4 {
+    transform: translateX(0);
+  }
+  /* -------------------------------------------------------------------------------------------------------- */
+  
+  .main-div-4 {
+    top: 600px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+  }
+  
+  .main-div-4 h1 {
+    color: transparent;
+    top: 10px;
+    height: 100px;
+    margin-left: 37%;
+    position: absolute;
+    display: inline-block;
+    font-size: 4em;
+    font-family: arial;
+    font-style: italic;
+    transition: 1s;
+    -webkit-text-stroke: 0.3vw transparent;
+  }
+  
+  .main-div-4 h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    color: black;
+    -webkit-text-stroke: 0vw #329d52;
+    border-right: 2px solid transparent;
+    overflow: hidden;
+    animation: animate4 3s linear infinite;
+  }
+  
+  @keyframes animate4 {
+    0%,
+    10%,
+    100% {
+      width: 0;
+    }
+    70%,
+    90% {
+      width: 100%;
+    }
+  }
+  
+  #phone-div {
+    position: absolute;
+    display: inline-block;
+    width: 23%;
+    margin-top: 170px;
+    margin-left: 260px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #phone-div img {
+    border-radius: 60px;
+    width: 70px;
+  }
+  #phone-div p {
+    color: black;
+    margin-left: 80px;
+    margin-top: -65px;
+    font-weight: 1000;
+    font-size: 2em;
+  }
+  #phone-div:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  #whatsap-div {
+    position: absolute;
+    display: inline-block;
+    width: 23%;
+    margin-top: 250px;
+    margin-left: 240px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #whatsap-div img {
+    border-radius: 60px;
+    width: 110px;
+  }
+  #whatsap-div p {
+    color: green;
+    margin-left: 95px;
+    margin-top: -72px;
+    font-size: 2em;
+    font-weight: 1000;
+  }
+  
+  #whatsap-div:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  #gmail-div {
+    position: absolute;
+    display: inline-block;
+    width: 30%;
+    margin-top: 370px;
+    margin-left: 258px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  #gmail-div img {
+    border-radius: 60px;
+    width: 70px;
+  }
+  #gmail-div p {
+    color: darkslateblue;
+    margin-left: 80px;
+    margin-top: -57px;
+    font-size: 2em;
+    font-weight: 1000;
+  }
+  
+  #gmail-div:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  #fb-div {
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    margin-top: 135px;
+    margin-left: 850px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #fb-div img {
+    border-radius: 60px;
+    width: 110px;
+  }
+  #fb-div p {
+    color: blue;
+    margin-left: 100px;
+    margin-top: -73px;
+    font-size: 2em;
+    font-weight: 1000;
+  }
+  
+  #fb-div:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  
+  #insta-div {
+    position: absolute;
+    display: inline-block;
+    width: 18%;
+    margin-top: 255px;
+    margin-left: 867px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #insta-div img {
+    border-radius: 90px;
+    width: 80px;
+  }
+  #insta-div p {
+    color: red;
+    margin-left: 90px;
+    margin-top: -57px;
+    font-size: 2em;
+    font-weight: 1000;
+  }
+  
+  #insta-div:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  
+  #linkdin-div {
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    margin-top: 360px;
+    margin-left: 879px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  #linkdin-div img {
+    border-radius: 90px;
+    width: 59px;
+  }
+  #linkdin-div p {
+    color: darkslategrey;
+    margin-left: 80px;
+    margin-top: -50px;
+    font-size: 1.8em;
+    font-weight: 1000;
+  }
+  #linkdin-div:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
